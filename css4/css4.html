@@ -16,18 +16,49 @@
             margin: 0;
         }
         
+        p {
+            margin: 0;
+        }
+        
         header {
             width: 100%;
-            height: .88rem;
-            background-color: mediumturquoise;
+            height: 0.88rem;
+            background-color: #5fc0cd;
+        }
+        
+        .off {
+            position: absolute;
+            top: 0.28rem;
+            left: 0.3rem;
+            font-size: 0.32rem;
+            color: linen;
+        }
+        
+        .login {
+            position: absolute;
+            top: 0.28rem;
+            left: 50%;
+            font-size: 0.36rem;
+            color: linen;
+        }
+        
+        .register {
+            float: right;
+            margin: 0.28rem 0.3rem 0 0;
+            font-size: 0.32rem;
+            color: linen;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <p>注册</p>
+        <p class=off>关闭</p>
+        <p class="login">登录</p>
+        <p class="register">注册</p>
     </header>
+    <input type="text" placeholder="请输入手机号码">
+    <input type="password" placeholder="请输入密码">
 
 </body>
 
