@@ -6,98 +6,7 @@
     <meta name="viewport" content="width=device-width; initial-scale=1.0;minimum-scale=1.0; 
     maximum-scale=1.0; user-scalable=no;">
     <title>登录</title>
-    <style pyte="txet/css">
-        html {
-            font-size: 312.5%;
-        }
-        
-        body {
-            font-size: initial;
-            background-color: #eff0f4;
-            margin: 0;
-        }
-        
-        p {
-            margin: 0;
-        }
-        
-        header {
-            width: 100%;
-            height: 0.88rem;
-            line-height: 0.88rem;
-            text-align: center;
-            background-color: #5fc0cd;
-        }
-        
-        .off {
-            position: absolute;
-            left: 0.3rem;
-            font-size: 0.32rem;
-            color: linen;
-        }
-        
-        .login {
-            font-size: 0.36rem;
-            color: linen;
-        }
-        
-        .register {
-            position: absolute;
-            left: 2rem;
-            font-size: 0.32rem;
-            color: linen;
-        }
-        
-        .box {
-            width: 100%;
-            height: 1rem;
-            margin: 0.16rem 0 0.16rem 0;
-            display: flex;
-            align-items: center;
-            background-color: #ffffff;
-        }
-        
-        .input-box {
-            width: 100%;
-        }
-        
-        .iphion {
-            width: 0.27rem;
-            height: 0.41rem;
-            border-width: 0.02rem;
-            border-right-style: solid;
-            border-color: #eff0f4;
-            padding: 0 0.44rem 0 0;
-            margin: 0 0.32rem 0 0.42rem;
-        }
-        
-        .lock {
-            width: 0.29rem;
-            height: 0.43rem;
-            margin: 0 0.44rem 0 0.42rem;
-            border-width: 0.02rem;
-            border-right-style: solid;
-            border-color: #eff0f4;
-            padding: 0 0.44rem 0 0;
-            margin: 0 0.32rem 0 0.42rem;
-        }
-        
-        .button {
-            width: 100%;
-            height: 1rem;
-            background-color: #5fc0cd;
-            color: #ffffff;
-            font-size: 0.32rem;
-        }
-        
-        .forget {
-            display: flex;
-            justify-content: flex-end;
-            color: #83ccd7;
-            font-size: 0.32rem;
-            margin: 0.2rem 0.33rem 0 0;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css4.css">
 </head>
 
 <body>
@@ -107,16 +16,18 @@
         <a class="register">注册</a>
     </header>
     <div class="box">
-        <img class="iphion" src="task1-css4.png">
-        <input class="input-box" type="text" style="border:none" placeholder="请输入手机号码">
+        <label for="phone"><img class="iphion" src="task1-css4.png"></label>
+        <span></span>
+        <input class="input-box" type="text" id="phone" onkeyup="value=value.replace(/[^\d]/g,'')" placeholder="请输入手机号码" maxlength="11">
     </div>
     <div class="box">
-        <img class="lock" src="task2-css4.png">
-        <input class="input-box" type="password" style="border:none" placeholder="请输入密码">
+        <label for="password"><img class="lock" src="task2-css4.png"></label>
+        <span></span>
+        <input class="input-box" id="password" type="password" placeholder="请输入密码">
     </div>
-    <input class="button" type="button" style="border:none" value="登录">
+    <input class="button" type="button" value="登录">
     <a class="forget" href="http://www.xxxxxx.com.cn">忘记密码</a>
 
 </body>
 
-</html>
+</html
