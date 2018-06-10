@@ -33,8 +33,9 @@ header {
     border-radius:.15rem;
     border: none;
     background-color:#55A8B3;
-    color:#FFFFFF;
+    outline: none; 
     font-size: .34rem;
+    color:#FFFFFF;
 }
 .hugong{
     width:1.44rem;
@@ -42,14 +43,16 @@ header {
     border-radius: .15rem;
     border: none;
     background-color:#FFFFFF;
-    color:#55A8B3;
+    font-size: .34rem;
     font-size: 0.34rem;
+    color:#55A8B3;
 }
 .top-right{
     float: right;
     width: .42rem;
     height: .42rem;
     margin: .22rem .3rem 0 -.5rem;
+    background:url(task7-css6.png) no-repeat 0 0;
 
 }
 .box{
@@ -59,13 +62,15 @@ header {
     height: 0.8rem;
     background-color:#FFFFFF;
 }
-.iltrate-box{
-    width:50%;
+.dropdown {
+    position: relative;
+    display: inline-block;
+	width:50%;
     border:0.01rem solid #e1e5e7;
-    color:#999999;
     line-height:0.8rem;
     text-align: center;
     font-size:0.28rem;
+    color:#999999;
 }
 .sjx{
     float: right;
@@ -74,26 +79,61 @@ header {
     border-color: #AFBAC0 transparent transparent transparent;
     margin: 0.36rem 0.12rem 0 0;
 }
+ul,li{
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+.dropdown-content {
+    float: left;
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
     </style>
 </head>
 <body>
     <header>
         <button type="button" class="guzhu">找雇主</button>
         <button type="button" class="hugong">找护工</button>
-        <a href="www.xxxxx.com">
-            <img class="top-right" src="task1-css6.png">  
-        </a>  
+        <a class="top-right" href="www.xxxxx.com"></a>  
     </header>
     <main>
         <div class="box">
-            <div class="iltrate-box">所在地
-                <span class="sjx"></span>
+            <div class="dropdown">
+                <span>所在地
+                    <span class="sjx"></span>
+                </span>
+                <ul class="dropdown-content">
+                    <li>北京</li>
+                    <li>上海</li>
+                    <li>苏州</li>
+                </ul>
             </div>
-            <div class="iltrate-box">食宿
-                <span class="sjx"></span>
+            <div class="dropdown">
+                <span>食宿
+                    <span class="sjx"></span>
+                </span>
+                <ul class="dropdown-content">
+                    <li>一日一餐</li>
+                    <li>一日两餐</li>
+                    <li>一日三餐</li>
+                </ul>
             </div>
-            <div class="iltrate-box">病人情况
-                <span class="sjx"></span>
+            <div class="dropdown">
+                <span>病人情况
+                    <span class="sjx"></span>
+                </span>
+                <ul class="dropdown-content">
+                    <li>能自理</li>
+                    <li>不能自理</li>
+                    <li>手术后</li>
+                </ul>
             </div>
         </div>
     </main>
