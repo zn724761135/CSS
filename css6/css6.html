@@ -10,8 +10,8 @@ html {
     font-size:312.5%; 
 } 
 body { 
-    font-size: initial; 
-    margin: 0; 
+    margin: 0;
+    font-size: initial;  
 }
 p, {
      margin: 0; 
@@ -19,37 +19,38 @@ p, {
 header {
     position: sticky;
     top:0;
-    z-index: 1;
     width: 100%;
     height: .88rem;
-    text-align: center;
-    line-height: .88rem;
-    word-spacing:-.16rem;
     background-color: #5FC0CD;
+    line-height: .88rem;
+    text-align: center;
+    word-spacing:-.16rem;
+    z-index: 1;
 }
 .guzhu{
     width:1.44rem;
     height: .7rem;
-    font-size: .34rem;
     border-radius:.15rem;
     border: none;
     background-color:#55A8B3;
     color:#FFFFFF;
+    font-size: .34rem;
 }
 .hugong{
     width:1.44rem;
     height: 0.7rem;
-    font-size: 0.34rem;
     border-radius: .15rem;
     border: none;
     background-color:#FFFFFF;
     color:#55A8B3;
+    font-size: 0.34rem;
 }
 .top-right{
     float: right;
-    margin: .22rem .3rem 0 -.5rem;
     width: .42rem;
     height: .42rem;
+    margin: .22rem .3rem 0 -.5rem;
+
 }
 .box{
     display:flex;
@@ -59,12 +60,12 @@ header {
     background-color:#FFFFFF;
 }
 .iltrate-box{
-    text-align: center;
-    line-height:0.8rem;
     width:50%;
     border:0.01rem solid #e1e5e7;
-    font-size:0.28rem;
     color:#999999;
+    line-height:0.8rem;
+    text-align: center;
+    font-size:0.28rem;
 }
 .sjx{
     float: right;
@@ -83,16 +84,19 @@ header {
             <img class="top-right" src="task1-css6.png">  
         </a>  
     </header>
-    <div class="box">
-        <div class="iltrate-box">所在地
-            <span class="sjx"></span>
+    <main>
+        <div class="box">
+            <div class="iltrate-box">所在地
+                <span class="sjx"></span>
+            </div>
+            <div class="iltrate-box">食宿
+                <span class="sjx"></span>
+            </div>
+            <div class="iltrate-box">病人情况
+                <span class="sjx"></span>
+            </div>
         </div>
-        <div class="iltrate-box">食宿
-            <span class="sjx"></span>
-        </div>
-        <div class="iltrate-box">病人情况
-            <span class="sjx"></span>
-        </div>
-    </div>
+    </main>
+
 </body>
 </html>
