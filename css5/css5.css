@@ -168,19 +168,19 @@ span::after{
     width: 50%;
     height: .88rem;
     margin: 0 .25rem  .04rem .37rem;
-    outline: none;
     border-radius:.15rem;
     border: .01rem solid #5fc0cd;
-    color:#5FC0CD;
     background-color: #ffffff;
+    outline: none;
+    color:#5FC0CD;
 }
 .contact{
     width: 50%;
     height: .88rem;
     border: none;
-    outline: none;  
     border-radius:.15rem;
     margin: 0  .37rem .04rem  0;
-    color:#ffffff;
     background-color:#5FC0CD;
+    outline: none;  
+    color:#ffffff;
 }
