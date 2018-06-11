@@ -103,17 +103,14 @@ li.li:hover{
     background-color: #5FC0CD;
 }
 .main-box{
-    position: relative;
-    height: 1.8rem;
+    height: 1.9rem;
     border: .001rem solid #E1E5E7;
     background: #FFFFFF;
-    /*添加line-right*/
-    
 }
 
 .date{
     padding-left: .4rem;
-    margin: .3rem 0 0 .3rem;
+    margin: .3rem 0 .2rem .3rem;
     background: url(task7-css6.png) no-repeat 0 -.62rem;
     font-size:.24rem;
     /* 字符间距 */
@@ -121,21 +118,33 @@ li.li:hover{
     color: #999999;
 }
 p.left{
+    margin: 0 0 0 .7rem;
     font-size: .28rem;
     color:#333333;
 }
 p.right{
+    float:right;
+    margin:-1.13rem .72rem 0 0;
     font-size: .3rem;
     color:#E63B0E;
 }
 .location{
     padding-left: .4rem;
-    margin: 0 0 0 .3rem;
+    margin: .2rem 0 .2rem .3rem;
     background: url(task7-css6.png) no-repeat 0 -1rem;
     font-size:.24rem;
     /* 字符间距 */
     letter-spacing: .03rem;
     color: #999999;
+}
+.getback {
+    float:right;
+    width: .19rem;
+    height: .19rem;
+    border-top: .03rem solid #5FC0CD;
+    border-right: .03rem solid #5FC0CD;
+    margin:-1rem .31rem 0 .31rem;
+    transform: rotate(45deg);
 }
     </style>
 </head>
@@ -185,18 +194,59 @@ p.right{
                     <p class="left">2018-6-12至2018-3-22</p>
                     <p class="location">北京.通州.果园</p>
                 </div>
+                <p class="right">25元/小时</p>
+                <a class="getback"></a>
             </li>
             <li class="main-box">
-                <ul>
-                    <li class="date">服务价格</li> 
-                </ul>
-            </li>
-            <li class="main-box"></li>
-            <li class="main-box"></li>
-            <li class="main-box"></li>
-            <li class="main-box"></li>
+                    <div>
+                        <p class="date">服务日期</p>
+                        <p class="left">2018-6-12至2018-3-22</p>
+                        <p class="location">北京.通州.果园</p>
+                    </div>
+                    <p class="right">35元/小时</p>
+                    <a class="getback"></a>
+                </li>
+                <li class="main-box">
+                        <div>
+                            <p class="date">服务日期</p>
+                            <p class="left">2018-6-12至2018-3-22</p>
+                            <p class="location">北京.通州.果园</p>
+                        </div>
+                        <p class="right">45元/小时</p>
+                        <a class="getback"></a>
+                    </li>
+                    <li class="main-box">
+                            <div>
+                                <p class="date">服务日期</p>
+                                <p class="left">2018-6-12至2018-3-22</p>
+                                <p class="location">北京.通州.果园</p>
+                            </div>
+                            <p class="right">55元/小时</p>
+                            <a class="getback"></a>
+                        </li>
+                        <li class="main-box">
+                                <div>
+                                    <p class="date">服务日期</p>
+                                    <p class="left">2018-6-12至2018-3-22</p>
+                                    <p class="location">北京.通州.果园</p>
+                                </div>
+                                <p class="right">25元/小时</p>
+                                <a class="getback"></a>
+                            </li>
+                            <li class="main-box">
+                                    <div>
+                                        <p class="date">服务日期</p>
+                                        <p class="left">2018-6-12至2018-3-22</p>
+                                        <p class="location">北京.通州.果园</p>
+                                    </div>
+                                    <p class="right">25元/小时</p>
+                                    <a class="getback"></a>
+                                </li>
         </ul>
     </main>
+    <footer>
+        
+    </footer>
 
 </body>
 </html>
