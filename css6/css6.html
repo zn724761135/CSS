@@ -13,7 +13,7 @@ body {
     margin:0 ;
     font-size: initial;  
 }
-p, {
+p {
      margin: 0; 
 }
 header {
@@ -62,10 +62,12 @@ header {
     height: 0.8rem;
     background-color:#FFFFFF;
 }
+
+/* 下拉框 */
 .dropdown {
+    flex: 1;
     position: relative;
     display: inline-block;
-	width:50%;
     border:0.01rem solid #e1e5e7;
     line-height:0.8rem;
     text-align: center;
@@ -84,6 +86,8 @@ ul,li{
     padding:0;
     list-style: none;
 }
+
+/* 下拉菜单 */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -93,14 +97,46 @@ ul,li{
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.main-content{
-    display: flex;
-    justify-content: center;
-    height: 1.9rem;
+
+/* 下拉项点击颜色 */
+li.li:hover{
+    background-color: #5FC0CD;
+}
+.main-box{
+    position: relative;
+    height: 1.8rem;
     border: .001rem solid #E1E5E7;
     background: #FFFFFF;
+    /*添加line-right*/
+    
 }
 
+.date{
+    padding-left: .4rem;
+    margin: .3rem 0 0 .3rem;
+    background: url(task7-css6.png) no-repeat 0 -.62rem;
+    font-size:.24rem;
+    /* 字符间距 */
+    letter-spacing: .03rem;
+    color: #999999;
+}
+p.left{
+    font-size: .28rem;
+    color:#333333;
+}
+p.right{
+    font-size: .3rem;
+    color:#E63B0E;
+}
+.location{
+    padding-left: .4rem;
+    margin: 0 0 0 .3rem;
+    background: url(task7-css6.png) no-repeat 0 -1rem;
+    font-size:.24rem;
+    /* 字符间距 */
+    letter-spacing: .03rem;
+    color: #999999;
+}
     </style>
 </head>
 <body>
@@ -111,46 +147,54 @@ ul,li{
     </header>
     <main>
         <div class="box">
-            <div class="dropdown">
-                <span>所在地
+            <ul class="dropdown">
+                <li>所在地
                     <span class="sjx"></span>
-                </span>
-                <ul class="dropdown-content">
-                    <li>北京</li>
-                    <li>上海</li>
-                    <li>苏州</li>
-                </ul>
-            </div>
-            <div class="dropdown">
-                <span>食宿
+                    <ul class="dropdown-content">
+                        <li class="li">北京</li>
+                        <li class="li">上海</li>
+                        <li class="li">苏州</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="dropdown">
+                <li>食宿
                     <span class="sjx"></span>
-                </span>
-                <ul class="dropdown-content">
-                    <li>一日一餐</li>
-                    <li>一日两餐</li>
-                    <li>一日三餐</li>
-                </ul>
-            </div>
-            <div class="dropdown">
-                <span>病人情况
+                    <ul class="dropdown-content">
+                        <li class="li">一日一餐</li>
+                        <li class="li">一日两餐</li>
+                        <li class="li">一日三餐</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="dropdown">
+                <li>病人情况
                     <span class="sjx"></span>
-                </span>
-                <ul class="dropdown-content">
-                    <li>能自理</li>
-                    <li>不能自理</li>
-                    <li>手术后</li>
-                </ul>
-            </div>
+                    <ul class="dropdown-content">
+                        <li class="li">能自理</li>
+                        <li class="li">不能自理</li>
+                        <li class="li">手术后</li>
+                    </ul>
+                </li>
+            </ul>
         </div>
         <ul>
-            <li class="main-content">
-                <div></div>
+            <li class="main-box">
+                <div>
+                    <p class="date">服务日期</p>
+                    <p class="left">2018-6-12至2018-3-22</p>
+                    <p class="location">北京.通州.果园</p>
+                </div>
             </li>
-            <li class="main-content"></li>
-            <li class="main-content"></li>
-            <li class="main-content"></li>
-            <li class="main-content"></li>
-            <li class="main-content"></li>
+            <li class="main-box">
+                <ul>
+                    <li class="date">服务价格</li> 
+                </ul>
+            </li>
+            <li class="main-box"></li>
+            <li class="main-box"></li>
+            <li class="main-box"></li>
+            <li class="main-box"></li>
         </ul>
     </main>
 

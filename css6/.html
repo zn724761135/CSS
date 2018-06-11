@@ -58,14 +58,12 @@ header {
 .box{
     display:flex;
     align-items: center;
-    justify-content: center;
     height: 0.8rem;
     background-color:#FFFFFF;
 }
 .dropdown {
+    flex: 1;
     position: relative;
-    display: inline-block;
-	width:50%;
     border:0.01rem solid #e1e5e7;
     line-height:0.8rem;
     text-align: center;
@@ -85,16 +83,21 @@ ul,li{
     list-style: none;
 }
 .dropdown-content {
-    float: left;
+    display: flex;
+    flex: 1;
     display: none;
     position: absolute;
     width: 100%;
     background-color: #f9f9f9;
 }
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: block; 
 }
 
+/* 下拉项点击颜色 */
+li:hover{
+    background-color: #5FC0CD;
+}
     </style>
 </head>
 <body>
@@ -110,7 +113,7 @@ ul,li{
                     <span class="sjx"></span>
                 </span>
                 <ul class="dropdown-content">
-                    <li>北京</li>
+                    <li class="li">北京</li>
                     <li>上海</li>
                     <li>苏州</li>
                 </ul>
