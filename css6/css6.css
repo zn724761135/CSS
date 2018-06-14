@@ -185,8 +185,7 @@ footer{
 
 .content-center{
     height:.4rem;
-    margin-left: .18rem;
-    background: url(task7-css6.png) no-repeat 0 -2.2rem;
+    background: url(task7-css6.png) no-repeat .2rem -2.2rem;
 }
 .footer-right{
     border: none;
