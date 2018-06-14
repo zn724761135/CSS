@@ -161,7 +161,7 @@ footer{
 .footer-left{
     height: 1rem;
     padding:.2rem 0 .16rem 0;
-    margin: 0 0 0 1.7rem;
+    margin: 0 0 0 1.5rem;
     border: none;
     background: url(task7-css6.png) no-repeat 0 -1.56rem;
     line-height: 1rem;
@@ -188,7 +188,7 @@ footer{
 .footer-right{
     height: 1rem;
     padding:.2rem 0 .16rem 0;
-    margin: 0 1.7rem 0 0;
+    margin: 0 1.5rem 0 0;
     border: none;
     background: url(task7-css6.png) no-repeat 0 -2.76rem;
     line-height: 1rem;
