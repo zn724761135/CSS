@@ -119,6 +119,9 @@ li.li:hover{
 }
 .left{
     margin: 0 0 0 .7rem;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
     font-size: .28rem;
     color:#333333;
 }
