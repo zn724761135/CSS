@@ -2,204 +2,129 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;minimum-scale=1.0; 
+    maximum-scale=1.0; user-scalable=no;">
     <title>详情</title>
-    <style pyte="txet/css">
-html { 
-    font-size:312.5%; 
-} 
-body { 
-    margin:0 ;
-    font-size: initial;  
-}
-p {
-     margin: 0; 
-}
-header {
-    position: sticky;
-    top:0;
-    height: .88rem;
-    background-color: #5FC0CD;
-    line-height: .88rem;
-    text-align: center;
-    word-spacing:-.16rem;
-    z-index: 1;
-}
-.guzhu{
-    width:1.44rem;
-    height: .7rem;
-    border-radius:.15rem;
-    border: none;
-    background-color:#55A8B3;
-    outline: none; 
-    font-size: .34rem;
-    color:#FFFFFF;
-}
-.hugong{
-    width:1.44rem;
-    height: 0.7rem;
-    border-radius: .15rem;
-    border: none;
-    background-color:#FFFFFF;
-    font-size: .34rem;
-    font-size: 0.34rem;
-    outline: none; 
-    color:#55A8B3;
-}
-.top-right{
-    float: right;
-    width: .42rem;
-    height: .42rem;
-    margin: .22rem .3rem 0 -.5rem;
-    background:url(task7-css6.png) no-repeat 0 0;
-
-}
-.box{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    height: 0.8rem;
-    background-color:#FFFFFF;
-}
-
-/* 下拉框 */
-.dropdown {
-    flex: 1;
-    position: relative;
-    display: inline-block;
-    border:0.01rem solid #e1e5e7;
-    line-height:0.8rem;
-    text-align: center;
-    font-size:0.28rem;
-    color:#999999;
-}
-.sjx{
-    float: right;
-    border-width: 0.1rem;
-    border-style: solid;
-    border-color: #AFBAC0 transparent transparent transparent;
-    margin: 0.36rem 0.12rem 0 0;
-}
-ul,li{
-    margin: 0;
-    padding:0;
-    list-style: none;
-}
-
-/* 下拉菜单 */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    width: 100%;
-    background-color: #f9f9f9;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* 下拉项点击颜色 */
-li.li:hover{
-    background-color: #5FC0CD;
-}
-.main-box{
-    height: 1.8rem;
-    border-top: .001rem solid #E1E5E7;
-    background: #FFFFFF;
-    line-height: .6rem;
-}
-.content-box{
-flex: 1;
-}
-
-.date{
-    padding-left: .4rem;
-    margin: .3rem 0 .2rem .3rem;
-    background: url(task7-css6.png) no-repeat 0 -.62rem;
-    font-size:.24rem;
-    /* 字符间距 */
-    letter-spacing: .03rem;
-    color: #999999;
-}
-p.left{
-    margin: 0 0 0 .7rem;
-    font-size: .28rem;
-    color:#333333;
-}
-p.right{
-    float:right;
-    margin:-1.13rem .72rem 0 0;
-    font-size: .3rem;
-    color:#E63B0E;
-}
-.location{
-    padding-left: .4rem;
-    margin: .2rem 0 .2rem .3rem;
-    background: url(task7-css6.png) no-repeat 0 -1rem;
-    font-size:.24rem;
-    /* 字符间距 */
-    letter-spacing: .03rem;
-    color: #999999;
-}
-.getback {
-    float:right;
-    width: .19rem;
-    height: .19rem;
-    border-top: .03rem solid #5FC0CD;
-    border-right: .03rem solid #5FC0CD;
-    margin:-1rem .31rem 0 .31rem;
-    transform: rotate(45deg);
-}
-    </style>
+    <link rel="stylesheet" type="text/css" href="css6.css">
 </head>
 <body>
-    <header>
-        <button type="button" class="guzhu">找雇主</button>
-        <button type="button" class="hugong">找护工</button>
-        <a class="top-right" href="www.xxxxx.com"></a>  
-    </header>
-    <main>
-        <div class="box">  
-
-            <ul class="dropdown">
-                <li>所在地
-                    <span class="sjx"></span>
-                    <ul class="dropdown-content">
-                        <li class="li">北京</li>
-                        <li class="li">上海</li>
-                        <li class="li">苏州</li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="dropdown">
-                <li>食宿
-                    <span class="sjx"></span>
-                    <ul class="dropdown-content">
-                        <li class="li">一日一餐</li>
-                        <li class="li">一日两餐</li>
-                        <li class="li">一日三餐</li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="dropdown">
-                <li>病人情况
-                    <span class="sjx"></span>
-                    <ul class="dropdown-content">
-                        <li class="li">能自理</li>
-                        <li class="li">不能自理</li>
-                        <li class="li">手术后</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <ul>
-            <li class="main-box"></li>
-        </ul>
-
-    </main>
-    <footer>
-        
-    </footer>
-
+        <header>
+                <button type="button" class="guzhu">找雇主</button>
+                <button type="button" class="hugong">找护工</button>
+                <a class="top-right" href="www.xxxxx.com"></a>  
+            </header>
+            <main>
+                <div class="box">
+                    <div class="dropdown">
+                        <span>所在地
+                            <span class="sjx"></span>
+                        </span>
+                        <ul class="dropdown-content">
+                            <li class="li">北京</li>
+                            <li class="li">上海</li>
+                            <li class="li">苏州</li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <span>食宿
+                            <span class="sjx"></span>
+                        </span>
+                        <ul class="dropdown-content">
+                            <li class="li">一日一餐</li>
+                            <li class="li">一日两餐</li>
+                            <li class="li">一日三餐</li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <span>病人情况
+                            <span class="sjx"></span>
+                        </span>
+                        <ul class="dropdown-content">
+                            <li class="li">能自理</li>
+                            <li class="li">不能自理</li>
+                            <li class="li">手术后</li>
+                        </ul>
+                    </div>
+                </div>
+                <ul>
+                    <li class="main-box">
+                        <span class="date">服务日期</span>
+                        <div class="main-div">
+                            <span class="left">2018-6-12至2018-3-22</span>
+                            <span class="right">25元/小时
+                                <a class="getback"></a>
+                            </span>
+                        </div>
+                        <span class="location">北京.通州.果园</span>
+                    </li>
+                    <li class="main-box">
+                        <span class="date">服务日期</span>
+                        <div class="main-div">
+                            <span class="left">2018-6-12至2018-3-22</span>
+                            <span class="right">25元/小时
+                                <a class="getback"></a>
+                            </span>
+                        </div>
+                        <span class="location">北京.通州.果园</span>
+                    </li>
+                    <li class="main-box">
+                        <span class="date">服务日期</span>
+                        <div class="main-div">
+                            <span class="left">2018-6-12至2018-3-22</span>
+                            <span class="right">25元/小时
+                                <a class="getback"></a>
+                            </span>
+                        </div>
+                        <span class="location">北京.通州.果园</span>
+                    </li>
+                    <li class="main-box">
+                        <span class="date">服务日期</span>
+                        <div class="main-div">
+                            <span class="left">2018-6-12至2018-3-22</span>
+                            <span class="right">25元/小时
+                                <a class="getback"></a>
+                            </span>
+                        </div>
+                        <span class="location">北京.通州.果园</span>
+                    </li>
+                    <li class="main-box">
+                        <span class="date">服务日期</span>
+                        <div class="main-div">
+                            <span class="left">2018-6-12至2018-3-22</span>
+                            <span class="right">25元/小时
+                                <a class="getback"></a>
+                            </span>
+                        </div>
+                        <span class="location">北京.通州.果园</span>
+                    </li>
+                    <li class="main-box">
+                        <span class="date">服务日期</span>
+                        <div class="main-div">
+                            <span class="left">2018-6-12至2018-3-22</span>
+                            <span class="right">25元/小时
+                                <a class="getback"></a>
+                            </span>
+                        </div>
+                        <span class="location">北京.通州.果园</span>
+                    </li>
+                </ul>
+            </main>
+            <footer>
+                <a href="www.xxx.com">
+                    <button type="button" class="footer-left">
+                        <p class="font-left">首页</p>
+                    </button>
+                </a>
+                <a href="www.xxx.com">
+                    <button type="button" class="footer-center">
+                        <p class="content-center"></p>
+                    </button>
+                </a>
+                <a href="www.xxx.com">
+                    <button type="button" class="footer-right">
+                        <p class="font-right">我的</p>
+                    </button>
+                </a>
+            </footer>
 </body>
 </html>
