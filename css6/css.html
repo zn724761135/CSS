@@ -46,6 +46,7 @@ header {
     border-radius: .15rem;
     border: none;
     background-color:#FFFFFF;
+    outline: none; 
     font-size: .34rem;
     color:#55A8B3;
 }
@@ -78,12 +79,13 @@ header {
     font-size:0.28rem;
     color:#999999;
 }
-.sjx{
+.sjx::after{
+    display: inline-block;
+    content: "";
     float: right;
     border: solid 0.1rem;
     border-color: #AFBAC0 transparent transparent transparent;
     margin: 0.36rem 0.12rem 0 0;
-    
 }
 ul,li{
     margin: 0;
@@ -97,13 +99,14 @@ ul,li{
     display: none;
     position: absolute;
     width: 100%;
+    border-top:.01rem solid #e1e5e7;
     background-color: #f9f9f9;
 }
 .dropdown:hover .dropdown-content {
     display: block; 
 }
 /* 下拉项点击颜色 */
-li.li:hover{
+.color:hover{
     background-color: #5FC0CD;
 }
 
@@ -116,7 +119,7 @@ li.li:hover{
 }
 .date{
     padding-left: .4rem;
-    margin: 0 0 0 .3rem;
+    margin-left:  .3rem;
     background: url(task7-css6.png) no-repeat 0 -.62rem;
     font-size:.24rem;
     /* 字符间距 */
@@ -129,7 +132,7 @@ li.li:hover{
     white-space: nowrap;
 }
 .left{
-    margin: 0 0 0 .7rem;
+    margin-left: .7rem;
     overflow:hidden;
     white-space:nowrap;
     text-overflow:ellipsis;
@@ -140,8 +143,10 @@ li.li:hover{
     font-size: .3rem;
     color:#E63B0E;
 }
-.getback {
+
+.getback::after{
     display: inline-block;
+    content: "";
     width: .19rem;
     height: .19rem;
     margin: 0 .3rem 0 .21rem;
@@ -151,7 +156,7 @@ li.li:hover{
 }
 .location{
     padding-left: .4rem;
-    margin: .2rem 0 .2rem .3rem;
+    margin-left: .3rem;
     background: url(task7-css6.png) no-repeat 0 -1rem;
     font-size:.24rem;
     /* 字符间距 */
@@ -166,18 +171,22 @@ footer{
     bottom: 0;
     left: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding:0.2rem 1rem .2rem 1rem;
+    height: 1.2rem;
     background: #F8FAFB;
     z-index: 1;
 }
+button{
+    width: 1.5rem;
+}
 .footer-left{
     border: none;
-    background: url(task7-css6.png) no-repeat 0.12rem -1.56rem;
+    background: url(task7-css6.png) no-repeat 0.53rem -1.56rem;
     outline: none; 
 }
 .font-left{
+    display: block;
     margin-top: .45rem;
     font-size: .1rem;
     color: #5FC0CD;
@@ -192,15 +201,17 @@ footer{
 }
 
 .content-center{
+    display: block;
     height:.4rem;
     background: url(task7-css6.png) no-repeat .2rem -2.2rem;
 }
 .footer-right{
     border: none;
-    background: url(task7-css6.png) no-repeat 0.12rem -2.76rem;
+    background: url(task7-css6.png) no-repeat 0.53rem -2.76rem;
     outline: none;
 }
 .font-right{
+    display: block;
     margin-top: .45rem;
     font-size: .1rem;
     color: #999999;
@@ -214,46 +225,38 @@ footer{
         <a class="top-right" href="www.xxxxx.com"></a>  
     </header>
     <main>
-        <div class="box">
-            <div class="dropdown">
-                <span>所在地
-                    <span class="sjx"></span>
-                </span>
+        <nav class="box">
+            <nav class="dropdown">
+                <p class="sjx">所在地</p>
                 <ul class="dropdown-content">
-                    <li class="li">北京</li>
-                    <li class="li">上海</li>
-                    <li class="li">苏州</li>
+                    <li class="color">北京</li>
+                    <li class="color">上海</li>
+                    <li class="color">苏州</li>
                 </ul>
-            </div>
-            <div class="dropdown">
-                <span>食宿
-                    <span class="sjx"></span>
-                </span>
+            </nav>
+            <nav class="dropdown">
+                <p class="sjx">食宿</p>
                 <ul class="dropdown-content">
-                    <li class="li">一日一餐</li>
-                    <li class="li">一日两餐</li>
-                    <li class="li">一日三餐</li>
+                    <li class="color">一日一餐</li>
+                    <li class="color">一日两餐</li>
+                    <li class="color">一日三餐</li>
                 </ul>
-            </div>
-            <div class="dropdown">
-                <span>病人情况
-                    <span class="sjx"></span>
-                </span>
+            </nav>
+            <nav class="dropdown">
+                <p class="sjx">病人情况</p>
                 <ul class="dropdown-content">
-                    <li class="li">能自理</li>
-                    <li class="li">不能自理</li>
-                    <li class="li">手术后</li>
+                    <li class="color">能自理</li>
+                    <li class="color">不能自理</li>
+                    <li class="color">手术后</li>
                 </ul>
-            </div>
-        </div>
+            </nav>
+        </nav>
         <ul>
             <li class="main-box">
                 <span class="date">服务日期</span>
                 <div class="main-div">
                     <span class="left">2018-6-12至2018-3-22</span>
-                    <span class="right">25元/小时
-                        <a class="getback"></a>
-                    </span>
+                    <span class="right getback">25元/小时</span>
                 </div>
                 <span class="location">北京.通州.果园</span>
             </li>
@@ -261,9 +264,7 @@ footer{
                 <span class="date">服务日期</span>
                 <div class="main-div">
                     <span class="left">2018-6-12至2018-3-22</span>
-                    <span class="right">25元/小时
-                        <a class="getback"></a>
-                    </span>
+                    <span class="right getback">25元/小时</span>
                 </div>
                 <span class="location">北京.通州.果园</span>
             </li>
@@ -271,9 +272,7 @@ footer{
                 <span class="date">服务日期</span>
                 <div class="main-div">
                     <span class="left">2018-6-12至2018-3-22</span>
-                    <span class="right">25元/小时
-                        <a class="getback"></a>
-                    </span>
+                    <span class="right getback">25元/小时</span>
                 </div>
                 <span class="location">北京.通州.果园</span>
             </li>
@@ -281,9 +280,7 @@ footer{
                 <span class="date">服务日期</span>
                 <div class="main-div">
                     <span class="left">2018-6-12至2018-3-22</span>
-                    <span class="right">25元/小时
-                        <a class="getback"></a>
-                    </span>
+                    <span class="right getback">25元/小时</span>
                 </div>
                 <span class="location">北京.通州.果园</span>
             </li>
@@ -291,9 +288,7 @@ footer{
                 <span class="date">服务日期</span>
                 <div class="main-div">
                     <span class="left">2018-6-12至2018-3-22</span>
-                    <span class="right">25元/小时
-                        <a class="getback"></a>
-                    </span>
+                    <span class="right getback">25元/小时</span>
                 </div>
                 <span class="location">北京.通州.果园</span>
             </li>
@@ -301,9 +296,7 @@ footer{
                 <span class="date">服务日期</span>
                 <div class="main-div">
                     <span class="left">2018-6-12至2018-3-22</span>
-                    <span class="right">25元/小时
-                        <a class="getback"></a>
-                    </span>
+                    <span class="right getback">25元/小时</span>
                 </div>
                 <span class="location">北京.通州.果园</span>
             </li>
@@ -312,17 +305,17 @@ footer{
     <footer>
         <a href="www.xxx.com">
             <button type="button" class="footer-left">
-                <p class="font-left">首页</p>
+                <span class="font-left">首页</span>
             </button>
         </a>
         <a href="www.xxx.com">
             <button type="button" class="footer-center">
-                <p class="content-center"></p>
+                <span class="content-center"></span>
             </button>
         </a>
         <a href="www.xxx.com">
             <button type="button" class="footer-right">
-                <p class="font-right">我的</p>
+                <span class="font-right">我的</span>
             </button>
         </a>
     </footer>
