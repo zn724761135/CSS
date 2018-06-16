@@ -6,9 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>游戏结果</title>
     <style pyte="txet/css">
+    html{
+        font-size: 312.5%;
+    }
+    body{
+        font-size: initial;
+        margin: 0;
+    }
+
+    /* header眉页 */
+    header{
+        height: .9rem;
+        background: #29BDE0;
+        border-bottom:.1rem solid #FFFFFF;
+        line-height: .9rem;
+        text-align: center;
+        font-size:.34rem;
+        /* 字符间距 */
+        letter-spacing: .04rem;
+        color: #FFFFFF;
+    }
+    .left-header::before{
+        display: inline-block;
+        float: left;
+        content: "";
+        width: .51rem;
+        height: .6rem;
+        margin: .1rem 0 0 .2rem;
+        background: url(task-css7.png) no-repeat -2.2rem -1.78rem;
+
+    }
+    .right-header::after{
+        display: inline-block;
+        float: right;
+        content: "";
+        width: .51rem;
+        height: .6rem;
+        margin: .1rem .2rem 0 0;
+        background: url(task-css7.png) no-repeat -.96rem -1.82rem;
+
+    }
+
     </style>
 </head>
 <body>
-    
+    <header>
+        <span class="left-header right-header">游戏结果</span>
+    </header>
+    <main>
+        
+    </main>
 </body>
 </html>

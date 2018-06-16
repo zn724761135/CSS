@@ -19,9 +19,9 @@ header{
 }
 .left-box{
     width: 1rem;
+    margin: .3rem 0 0 .22rem;
     border:none;
     background: #29BDE0;
-    margin: .3rem 0 0 .22rem;
     outline:none;
     
 }
@@ -87,11 +87,11 @@ header{
 }
 .sjx::after{
     display: inline-block;
-    content: "";
     float: right;
+    content: "";
+    margin: .7rem -.2rem 0 -1rem;
     border: solid 0.3rem;
     border-color:transparent transparent transparent #FBB435;
-    margin: .7rem -.2rem 0 -1rem;
 }
 .bottom-box{
     display:flex;
