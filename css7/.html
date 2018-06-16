@@ -41,7 +41,6 @@
 
     /* main主体 */
     .main-box{
-        height: 1.16rem;
         margin: .27rem .36rem;
         border: solid .01rem #C9C9C9;
         background: #FFFFFF;
@@ -56,7 +55,7 @@
         content: "";
         width: .24rem;
         height:.24rem;
-        margin: .42rem .2rem 0 0;
+        margin: .42rem .2rem 0 -.5rem;
         border-top:.05rem solid #E7E7E7;
         border-right: .05rem solid #E7E7E7;
         transform: rotate(45deg);
@@ -64,15 +63,63 @@
 
     /* footer尾页 */
     .footer-box{
-       height:7.76rem;
-       margin: 0 .35rem .62rem .35rem;
-       border: solid .01rem #C9C9C9;
-       background: #FFFFFF;
+        height: 8rem;
+        margin: 0 .35rem;
+        border: solid .01rem #C9C9C9;
+        background: #FFFFFF;
+        text-align: center;
     }
     .top-box{
-        height: .9rem;
         border-bottom: .01rem solid #FBB435;
-        background: #FFFFFF;
+        line-height: .9rem;
+        text-align: center;
+        font-size: .38rem;
+        /* 字符间距 */
+        letter-spacing: .03rem;
+        color: #FBB435;
+    }
+    .content-box{
+        display: inline-block;
+        width: 4.63rem;
+        margin-top: .27rem;
+        background: #69D1E9;
+        line-height:1.34rem;
+        font-size:.32rem;
+        letter-spacing: .04rem;
+        color: #FFFFFF;
+    }
+    .font{
+        margin-top: .27rem;
+        font-size: .25rem;
+        color: #787878;
+    }
+    .sjx::after{
+        display: inline-block;
+        content: "";
+        float: right;
+        border: solid 0.3rem;
+        border-color:transparent transparent transparent #FBB435;
+        margin: .7rem -.2rem 0 -1rem;
+    }
+    .bottom-box{
+        display:flex;
+        justify-content: space-between;
+        width: .98rem;
+        margin: auto;
+        margin-top: .14rem;
+        text-align: center;
+    }
+    .blue{
+        width: .17rem;
+        height: .17rem;
+        border-radius: 1000%;
+        background: #69D1E9;
+    }
+    .grey{
+        width: .17rem;
+        height: .17rem;
+        border-radius: 1000%;
+        background: #F0F0F0;
     }
     </style>
 </head>
@@ -91,7 +138,27 @@
     </main>
     <footer>
         <ul class="footer-box">
-            <li class="top-box"></li>
+            <li class="top-box">捉鬼游戏</li>
+            <li>
+                <a  class="content-box">简化版</a>
+            </li>
+            <li class="font">有1133个用户正在玩此游戏</li>
+            <li class="sjx">
+                <a  class="content-box">猜词版</a>
+            </li>
+            <li class="font">有1133个用户正在玩此游戏</li>
+            <li>
+                <a  class="content-box">白痴版</a>
+            </li>
+            <li class="font">有1133个用户正在玩此游戏</li>
+            <li>
+                <div class="bottom-box">
+                    <a class="blue"></a>
+                    <a class="grey"></a>
+                    <a class="grey"></a>
+                    <a class="grey"></a>
+                </div>
+            </li>
         </ul>
     </footer>
 </body>
