@@ -10,13 +10,117 @@
         font-size: 312.5%;
     }
     body{
+        background: #29BDE0;
         font-size: initial;
         margin: 0;
     }
-    
+    p,ul,li{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    /* header眉页 */
+    header{
+        height: .88rem;
+        background: #29BDE0;
+        line-height: .88rem;
+        text-align: center;
+        font-size: .34rem;
+        /* 字符间距 */
+        letter-spacing: .15rem;
+        color: #FFFFFF;
+    }
+    .left-header-box{
+        display:inline-block;
+        float: left;
+        position: relative;
+        top:50%;
+        width: .39rem;
+        height: .4rem;
+        margin:-.2rem 0 0 .23rem;
+        border:.01rem solid#FFFFFF;
+    }
+    .left-header-content{
+        width: .3rem;
+        margin:.09rem auto;
+        border:.01rem solid#FFFFFF;
+        text-align:center;
+    }
+    .left-header{
+        float: right;
+        position: relative;
+        top: 50%;
+        width: .36rem;
+        height: .36rem;
+        margin :-.18rem .23rem 0 0;
+        background: url(task-css7.png) no-repeat -2.24rem -.96rem;
+    }
+
+    /* main主体 */
+    .top-box{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        height: .82rem;
+        background:#b9e9f5;
+        
+    }
+    .left-font{
+        margin-left: .46rem;
+        font-size: .26rem;
+        color: #464646;
+    }
+    .right-circle{
+        width: .52rem;
+        height: .52rem;
+        border-radius: 100%;
+        border: none;
+        margin-right: .17rem;
+        background: #FBB435;
+        outline: none;
+    }
+    .right-circle::after{
+        display: inline-block;
+        content: "";
+        border: solid 0.2rem;   
+        margin: .05rem 0 0 .1rem;
+        border-color:  transparent transparent transparent #FFFFFF;  
+    }
+    .font{
+        margin: .24rem 0 0 .72rem;
+        font-size: .24rem;
+        color: #FFFFFF;
+    }
+    .font::before{
+        display: inline-block;
+        float: left;
+        content: "";
+        border: solid 0.1rem;
+        margin: -.24rem 0  0  -.01rem;
+        border-color: #b9e9f5 transparent transparent transparent;  
+    }
     </style>
 </head>
 <body>
-    
+    <header>
+        <a>
+            <ul class="left-header-box">
+                <li class="left-header-content"></li>
+                <li class="left-header-content"></li>
+                <li class="left-header-content"></li>
+            </ul>
+        </a>
+        <span>投票</span>
+        <a class="left-header"></a>
+    </header>
+    <main>
+        <div class="top-box">
+            <p class="left-font">发言讨论结束，大家请投票</p>
+            <button type="button" class="right-circle">
+            </button>
+        </div>
+        <p class="font">点击得票数最多人的头像</p>
+    </main>
 </body>
 </html>
