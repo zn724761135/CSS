@@ -10,6 +10,7 @@
         font-size: 312.5%;
     }
     body{
+        padding-bottom: 1.6rem;
         background: #29BDE0;
         font-size: initial;
         margin: 0;
@@ -22,6 +23,8 @@
 
     /* header眉页 */
     header{
+        position: sticky;
+        top:0;
         height: .88rem;
         background: #29BDE0;
         line-height: .88rem;
@@ -80,25 +83,122 @@
         background: #FBB435;
         outline: none;
     }
+
+    /* 三角形 */
     .right-circle::after{
         display: inline-block;
         content: "";
-        border: solid 0.2rem;   
-        margin: .05rem 0 0 .1rem;
-        border-color:  transparent transparent transparent #FFFFFF;  
+        margin: .05rem 0 0 .05rem;
+        border-top: .15rem solid transparent;
+        border-left: .3rem solid #FFFFFF;
+        border-bottom: .15rem solid transparent;
     }
     .font{
-        margin: .24rem 0 0 .72rem;
+        margin: .24rem 0 .43rem .72rem;
         font-size: .24rem;
         color: #FFFFFF;
     }
+    /* 三角形 */
     .font::before{
         display: inline-block;
         float: left;
         content: "";
-        border: solid 0.1rem;
         margin: -.24rem 0  0  -.01rem;
-        border-color: #b9e9f5 transparent transparent transparent;  
+        border-top: .14rem solid #b9e9f5;
+        border-left: .07rem solid transparent;
+        border-right: .07rem solid transparent;
+    }
+    .center-box{
+        display: flex;
+        justify-content: space-around;
+        height: 1.4rem;
+        margin-bottom: .74rem;
+    }
+
+    /* 下拉框 */
+    .dropdown{
+        width: 1.26rem;
+        height:1.26rem;
+        border: .05rem solid #FFFFFF;
+        background: #F5C97B;
+    }
+    .role{
+        display: block;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 75%;
+        font-size: .3rem;
+        color: #565656;
+    }
+    .number{
+        display: block;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 25%;
+        background:rgba(26,153,183,.5);
+        font-size: .23rem;
+        color: #FFFFFF;
+    }
+
+    /* 下拉框内容 */
+    .dropdown-content {
+        display: none;
+        width: 100%;
+    }
+    .dropdown:hover .dropdown-content {
+        display: inline-block; 
+    }
+    .killer{
+        display: inline-block;
+        width: .3rem;
+        height: .3rem;
+        margin: .34rem .07rem 0 0;
+        background: url(task-css7.png) no-repeat -2.2rem 0;
+    }
+    .judge{
+        display: inline-block;
+        width: .3rem;
+        height: .3rem;
+        margin-left: -.15rem;
+        background: url(task-css7.png) no-repeat -1.04rem -1rem;
+    }
+    .sniper{
+        display: inline-block;
+        width: .3rem;
+        height: .3rem;
+        margin-left: -.07rem;
+        background: url(task-css7.png) no-repeat 0 -1rem;
+    }
+    .doctor{
+        display: inline-block;
+        width: .3rem;
+        height: .3rem;
+        margin-left: -.08rem;
+        background: url(task-css7.png) no-repeat -1.02rem 0;
+    }
+
+    /* footer页尾 */
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 1.8rem;
+        background: #29BDE0;
+        line-height: 1.9rem;
+        text-align: center;
+    }
+    .button-box{
+        width: 50%;
+        height: .87rem;
+        border:none;
+        background: #FBB435;
+        outline: none;
+        font-size: .4rem;
+        /* 字符间距 */
+        letter-spacing: .15rem;
+        color: #FFFFFF;
     }
     </style>
 </head>
@@ -121,6 +221,139 @@
             </button>
         </div>
         <p class="font">点击得票数最多人的头像</p>
+        <ul>
+            <li class="center-box">
+                <nav class="dropdown">
+                    <spam class="role">水民</spam>
+                    <span class="number">1号</span>
+                    <ul class="dropdown-content">
+                        <li class="killer"></li>
+                        <li class="judge"></li>
+                        <li class="sniper"></li>
+                        <li class="doctor"></li>
+                    </ul>
+                </nav>
+                <nav class="dropdown">
+                    <spam class="role">水民</spam>
+                    <span class="number">2号</span>
+                    <ul class="dropdown-content">
+                        <li class="killer"></li>
+                        <li class="judge"></li>
+                        <li class="sniper"></li>
+                        <li class="doctor"></li>
+                    </ul>
+                </nav>
+                <nav class="dropdown">
+                    <spam class="role">警察</spam>
+                    <span class="number">3号</span>
+                    <ul class="dropdown-content">
+                        <li class="killer"></li>
+                        <li class="judge"></li>
+                        <li class="sniper"></li>
+                        <li class="doctor"></li>
+                    </ul>
+                </nav>
+            </li>
+            <li class="center-box">
+                <nav class="dropdown">
+                    <spam class="role">法官</spam>
+                    <span class="number">4号</span>
+                    <ul class="dropdown-content">
+                        <li class="killer"></li>
+                        <li class="judge"></li>
+                        <li class="sniper"></li>
+                        <li class="doctor"></li>
+                    </ul>
+                </nav>
+                <nav class="dropdown">
+                    <spam class="role">狙击手</spam>
+                    <span class="number">5号</span>
+                    <ul class="dropdown-content">
+                        <li class="killer"></li>
+                        <li class="judge"></li>
+                        <li class="sniper"></li>
+                        <li class="doctor"></li>
+                    </ul>
+                </nav>
+                <nav class="dropdown">
+                    <spam class="role">医生</spam>
+                    <span class="number">6号</span>
+                    <ul class="dropdown-content">
+                        <li class="killer"></li>
+                        <li class="judge"></li>
+                        <li class="sniper"></li>
+                        <li class="doctor"></li>
+                    </ul>
+                </nav>
+            </li>
+            <li class="center-box">
+                <nav class="dropdown">
+                    <spam class="role">杀手</spam>
+                    <span class="number">7号</span>
+                    <ul class="dropdown-content">
+                        <li class="killer"></li>
+                        <li class="judge"></li>
+                        <li class="sniper"></li>
+                        <li class="doctor"></li>
+                    </ul>
+                </nav>
+                <nav class="dropdown">
+                    <spam class="role">水民</spam>
+                    <span class="number">8号</span>
+                    <ul class="dropdown-content">
+                        <li class="killer"></li>
+                        <li class="judge"></li>
+                        <li class="sniper"></li>
+                        <li class="doctor"></li>
+                    </ul>
+                </nav>
+                <nav class="dropdown">
+                    <spam class="role">水民</spam>
+                    <span class="number">9号</span>
+                    <ul class="dropdown-content">
+                        <li class="killer"></li>
+                        <li class="judge"></li>
+                        <li class="sniper"></li>
+                        <li class="doctor"></li>
+                    </ul>
+                </nav>
+            </li>
+            <li class="center-box">
+                <nav class="dropdown">
+                    <spam class="role">医生</spam>
+                    <span class="number">10号</span>
+                    <ul class="dropdown-content">
+                        <li class="killer"></li>
+                        <li class="judge"></li>
+                        <li class="sniper"></li>
+                        <li class="doctor"></li>
+                    </ul>
+                </nav>
+                <nav class="dropdown">
+                    <spam class="role">狙击手</spam>
+                    <span class="number">11号</span>
+                    <ul class="dropdown-content">
+                        <li class="killer"></li>
+                        <li class="judge"></li>
+                        <li class="sniper"></li>
+                        <li class="doctor"></li>
+                    </ul>
+                </nav>
+                <nav class="dropdown">
+                    <spam class="role">警察</spam>
+                    <span class="number">12号</span>
+                    <ul class="dropdown-content">
+                        <li class="killer"></li>
+                        <li class="judge"></li>
+                        <li class="sniper"></li>
+                        <li class="doctor"></li>
+                    </ul>
+                </nav>
+            </li>
+        </ul>
     </main>
+    <footer>
+        <button class="button-box" type="button">投死</button>
+    </footer>
 </body>
 </html>
