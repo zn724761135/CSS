@@ -180,3 +180,7 @@ footer{
     letter-spacing: .15rem;
     color: #FFFFFF;
 }
+audio{
+    width: 0;
+    height: 0;
+}
