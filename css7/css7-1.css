@@ -55,6 +55,7 @@ header{
 
 /* footer尾页 */
 .footer-box{
+    position: relative;
     height: 8rem;
     margin: 0 .35rem;
     border: solid .01rem #C9C9C9;
@@ -72,7 +73,7 @@ header{
 }
 .content-box{
     display: inline-block;
-    width: 4.63rem;
+    width: 80%;
     margin-top: .27rem;
     background: #69D1E9;
     line-height:1.34rem;
@@ -87,10 +88,11 @@ header{
     color: #787878;
 }
 .sjx::after{
-    display: inline-block;
-    float: right;
+    position: absolute;
+    top: 50%;
+    right: .1rem;
     content: "";
-    margin: .7rem -.2rem 0 -1rem;
+    margin: -.3rem -.2rem -3rem 0;
     border: solid 0.3rem;
     border-color:transparent transparent transparent #FBB435;
 }
