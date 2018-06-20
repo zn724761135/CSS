@@ -5,9 +5,11 @@ body{
     margin: 0;
     font-size:initial;
 }
-p,ul,li{
-    padding: 0;
+p{
     margin: 0;
+}
+ul,li{
+    padding: 0;
     list-style: none;
 }
 
@@ -17,22 +19,23 @@ header{
     height:.9rem;
     background: #29BDE0;
 }
-.left-box{
-    width: 1rem;
-    margin: .3rem 0 0 .22rem;
-    border:none;
-    background: #29BDE0;
-    outline:none;
-    
-}
+
+/* 中间的横杆利用padding上下把height内容撑小，再利用background-clip：content-box */
 .left{
-    width:.34rem;
-    margin: .08rem;
-    border: .02rem solid #FFFFFF;
+    width: .34rem; 
+    height: .32rem;  
+    padding:.1rem 0;
+    margin: .38rem 0 0 .22rem;
+    border:none;
+    outline:none;
+    border-top: .04rem solid #FFFFFF;  
+    border-bottom: .04rem solid #FFFFFF;   
+    background:#FFFFFF content-box;  
 }
 
 /* main主体 */
-.main-box{
+.main-top{
+    display: block;
     margin: .27rem .36rem;
     border: solid .01rem #C9C9C9;
     background: #FFFFFF;
@@ -41,7 +44,7 @@ header{
     font-size: .35rem;
     color: #9A9A9A
 }
-.arrows::after{
+.main-top::after{
     display: inline-block;
     float: right;
     content: "";
@@ -54,7 +57,7 @@ header{
 }
 
 /* footer尾页 */
-.footer-box{
+.box{
     position: relative;
     height: 8rem;
     margin: 0 .35rem;
