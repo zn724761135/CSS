@@ -29,6 +29,7 @@ header{
     /* 字符间距 */
     letter-spacing: .15rem;
     color: #FFFFFF;
+    z-index: 1;
 }
 .left-header-box{
     display:flex;
