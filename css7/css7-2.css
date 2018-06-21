@@ -2,52 +2,86 @@ html{
     font-size: 312.5%;
 }
 body{
-    padding-bottom: 1.6rem;
+    padding:.9rem 0 1.6rem 0;
     background: #29BDE0;
     font-size: initial;
     margin: 0;
 }
-p,ul,li{
-    padding: 0;
+p{
     margin: 0;
+}
+ul{
+    padding-left: 0;
     list-style: none;
 }
 
 /* header眉页 */
 header{
-    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
     top:0;
+    width: 100%;
     height: .88rem;
     background:  #29BDE0;
-    line-height: .88rem;
-    text-align: center;
     font-size: .34rem;
     /* 字符间距 */
     letter-spacing: .15rem;
     color: #FFFFFF;
 }
 .left-header-box{
-    float: left;
-    position: relative;
-    top:50%;
-    width: .39rem;
-    height: .4rem;
-    margin:-.2rem 0 0 .23rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: .4rem;
+    height: .43rem;
+    padding: .03rem;
+    margin-left:  .23rem;
     border:.01rem solid#FFFFFF;
 }
 .left-header-content{
-    width: .3rem;
-    margin:.09rem auto;
-    border:.01rem solid#FFFFFF;
+    width: .34rem; 
+    height: .32rem;  
+    padding:.11rem 0;
+    border:none;
+    outline:none;
+    border-top: .03rem solid #FFFFFF;  
+    border-bottom: .03rem solid #FFFFFF;   
+    background:#FFFFFF content-box; 
 }
 .left-header{
-    float: right;
-    position: relative;
-    top: 50%;
     width: .36rem;
     height: .36rem;
     margin :-.18rem .23rem 0 0;
     background: url(task-css7.png) no-repeat -2.24rem -.96rem;
+}
+.right-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: .5rem;
+    margin-right: .23rem;
+}
+.right-content{
+    display:inline-block;
+    width: .02rem;
+    height:.5rem;
+    border:.01rem solid #FFFFFF;
+    background: #FFFFFF;
+    transform: rotate(45deg);
+}
+
+.right-content::after{
+    position: absolute;
+    top:-.02rem;
+    left: -.01rem;
+    content: "";
+    width: .02rem;
+    height:.5rem;
+    border:.01rem solid #FFFFFF;
+    background: #FFFFFF;
+    transform: rotate(90deg);
 }
 
 /* main主体 */
@@ -60,7 +94,7 @@ header{
     
 }
 .left-font{
-    margin-left: .46rem;
+    margin-left: -2.4rem;
     font-size: .26rem;
     color: #464646;
 }
@@ -89,24 +123,25 @@ header{
     color: #FFFFFF;
 }
 /* 三角形 */
-.font::before{
+.top-box::before{
     float: left;
     content: "";
-    margin: -.24rem 0  0  -.01rem;
+    margin: .97rem 0  0  .71rem;
     border-top: .14rem solid #b9e9f5;
     border-left: .07rem solid transparent;
     border-right: .07rem solid transparent;
 }
 .center-box{
     display: flex;
-    justify-content: space-around;
+    flex-flow:wrap;
+    justify-content: center;
 }
 
 /* 下拉框 */
 .dropdown{
-    width: 20vw;
-    height: 20vw;
-    margin-bottom:8.3vw;
+    width: 23.5vw;
+    height: 23.5vw;
+    margin: 0 4vw 8.3vw 4vw;
     border: .05rem solid #FFFFFF;
     background: #F5C97B;
 }

@@ -107,14 +107,15 @@
     }
     .center-box{
         display: flex;
-        justify-content: space-around;
+        flex-flow:wrap;
+        justify-content: center;
     }
 
     /* 下拉框 */
     .dropdown{
-        width: 20vw;
-        height: 20vw;
-        margin-bottom:8.3vw;
+        width: 23.5vw;
+        height: 23.5vw;
+        margin: 0 4vw 8.3vw 4vw;
         border: .05rem solid #FFFFFF;
         background: #F5C97B;
     }
@@ -210,9 +211,8 @@
             </button>
         </div>
         <p class="font">点击得票数最多人的头像</p>
-        <ul>
-            <li class="center-box">
-                <nav class="dropdown">
+            <div class="center-box">
+                <div class="dropdown">
                     <spam class="role">水民</spam>
                     <span class="number">1号</span>
                     <ul class="dropdown-content">
@@ -221,8 +221,8 @@
                         <li class="sniper"></li>
                         <li class="doctor"></li>
                     </ul>
-                </nav>
-                <nav class="dropdown">
+                </div>
+                <div class="dropdown">
                     <spam class="role">水民</spam>
                     <span class="number">2号</span>
                     <ul class="dropdown-content">
@@ -231,8 +231,8 @@
                         <li class="sniper"></li>
                         <li class="doctor"></li>
                     </ul>
-                </nav>
-                <nav class="dropdown">
+                </div>
+                <div class="dropdown">
                     <spam class="role">警察</spam>
                     <span class="number">3号</span>
                     <ul class="dropdown-content">
@@ -241,10 +241,8 @@
                         <li class="sniper"></li>
                         <li class="doctor"></li>
                     </ul>
-                </nav>
-            </li>
-            <li class="center-box">
-                <nav class="dropdown">
+                </div>
+                <div class="dropdown">
                     <spam class="role">法官</spam>
                     <span class="number">4号</span>
                     <ul class="dropdown-content">
@@ -253,8 +251,8 @@
                         <li class="sniper"></li>
                         <li class="doctor"></li>
                     </ul>
-                </nav>
-                <nav class="dropdown">
+                </div>
+                <div class="dropdown">
                     <spam class="role">狙击手</spam>
                     <span class="number">5号</span>
                     <ul class="dropdown-content">
@@ -263,8 +261,8 @@
                         <li class="sniper"></li>
                         <li class="doctor"></li>
                     </ul>
-                </nav>
-                <nav class="dropdown">
+                </div>
+                <div class="dropdown">
                     <spam class="role">医生</spam>
                     <span class="number">6号</span>
                     <ul class="dropdown-content">
@@ -273,10 +271,9 @@
                         <li class="sniper"></li>
                         <li class="doctor"></li>
                     </ul>
-                </nav>
-            </li>
-            <li class="center-box">
-                <nav class="dropdown">
+                </div>
+
+                <div class="dropdown">
                     <spam class="role">杀手</spam>
                     <span class="number">7号</span>
                     <ul class="dropdown-content">
@@ -285,8 +282,8 @@
                         <li class="sniper"></li>
                         <li class="doctor"></li>
                     </ul>
-                </nav>
-                <nav class="dropdown">
+                </div>
+                <div class="dropdown">
                     <spam class="role">水民</spam>
                     <span class="number">8号</span>
                     <ul class="dropdown-content">
@@ -295,8 +292,8 @@
                         <li class="sniper"></li>
                         <li class="doctor"></li>
                     </ul>
-                </nav>
-                <nav class="dropdown">
+                </div>
+                <div class="dropdown">
                     <spam class="role">水民</spam>
                     <span class="number">9号</span>
                     <ul class="dropdown-content">
@@ -305,10 +302,8 @@
                         <li class="sniper"></li>
                         <li class="doctor"></li>
                     </ul>
-                </nav>
-            </li>
-            <li class="center-box">
-                <nav class="dropdown">
+                </div>
+                <div class="dropdown">
                     <spam class="role">医生</spam>
                     <span class="number">10号</span>
                     <ul class="dropdown-content">
@@ -317,8 +312,8 @@
                         <li class="sniper"></li>
                         <li class="doctor"></li>
                     </ul>
-                </nav>
-                <nav class="dropdown">
+                </div>
+                <div class="dropdown">
                     <spam class="role">狙击手</spam>
                     <span class="number">11号</span>
                     <ul class="dropdown-content">
@@ -327,8 +322,8 @@
                         <li class="sniper"></li>
                         <li class="doctor"></li>
                     </ul>
-                </nav>
-                <nav class="dropdown">
+                </div>
+                <div class="dropdown">
                     <spam class="role">警察</spam>
                     <span class="number">12号</span>
                     <ul class="dropdown-content">
@@ -337,9 +332,8 @@
                         <li class="sniper"></li>
                         <li class="doctor"></li>
                     </ul>
-                </nav>
-            </li>
-        </ul>
+                </div>
+            </div>
     </main>
     <footer>
         <button class="button-box" type="button" onclick="location.href='css7-3.html'">投死</button>
