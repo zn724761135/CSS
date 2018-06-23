@@ -3,8 +3,9 @@ html{
 }
 body{
     font-size: initial;
+    background: #fafafa;
 }
-ul{
+p,h6,h4,ul{
     margin: 0;
 }
 
@@ -59,21 +60,218 @@ ul{
     width: 3.5rem;
 }
 .navbar-toggler{
-    padding: 0;
-    margin: .25rem .75rem .25rem 0;
+    padding: .15rem;
     border:none;
     outline: none !important;
     font-size: .5rem;
 }
+.navbar-toggler:hover {
+    background: darkgreen;
+}
 @media (max-width:767px){
-    .navbar-nav{
+    .navbar-nav {
         text-align: center;
     }
+}
+@media (min-width: 768px){
+    .navbar-collapse {
+        display: flex!important;
+        justify-content: flex-end !important;    
+    }
+}
+@media (max-width:767px){
+    .nav-link:hover{
+        background: darkgreen;
+    }
+
+}
+@media (min-width:768px){
+    .nav-item:hover{
+        border-bottom: .02rem solid #FFFFFF;   
+    }
+    
+}
+.navbar-nav{
+    line-height: .8rem;
+}
+.nav-link{
+    padding: .2rem .5rem !important;
+    font-size: .16rem;
+    /* 字符间距 */
+    letter-spacing: .1rem;
+    color:#FFFFFF;
 }
 
 
 /* main主体 */
+
+/* 轮播图 */
 .picture-size{
     width: 100vw;
-    height: 33vw;
+    height: 31vw;
+}
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.top-content{
+    text-align: center;
+}
+
+.huojian{
+    display: inline-block;
+    width: .45rem;
+    height: .62rem;
+    margin-top: 1.65rem;
+    background: url(../picture/task-css8.png) no-repeat -1.99rem 0;
+}
+.book{
+    display: inline-block;
+    width: .6rem;
+    height: .48rem;
+    margin-top: 1.65rem;
+    background: url(../picture/task-css8.png) no-repeat -1.88rem -2.42rem;
+}
+.person{
+    display: inline-block;
+    width: .52rem;
+    height: .55rem;
+    margin-top: 1.65rem;
+    background: url(../picture/task-css8.png) no-repeat -1.92rem -1.2rem;
+}
+h6{
+    margin: .3rem 0;
+    font-size: .18rem;
+    color: #333333;
+}
+.synopsis{
+    font-size: .16rem;
+    color: #999999;
+}
+@media(min-width:576px){
+    .left{
+        text-align: left;
+    }
+}
+@media(min-width:992px){
+    .center{
+        text-align: center;
+    }
+}
+.digit{
+    margin: 1.9rem 0 .17rem 0;
+    font-size: .18rem;
+    color: #26A26F;
+}
+.bottom-digit{
+    margin: .32rem 0 .17rem 0;
+    font-size: .18rem;
+    color: #26A26F;
+}
+.digit::before{
+    display: inline-block;
+    content: "";
+    width: .13rem;
+    height: .13rem;
+    margin-right: .14rem;
+    background: url(../picture/task16-css8.png) no-repeat 0 -.01rem ;
+}
+
+.long {
+    position: absolute;
+    height: 2.2rem;
+    margin: 2rem 0 0 -1.55rem;
+    border: .01rem solid #DEDEDE;
+}
+@media(max-width:576px){
+    .long{
+        display: none;
+    }
+}
+h5{
+    margin: 1.51rem 0 .72rem 0;
+    font-size: .18rem;
+    color: #333333;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-right: 0;
+}
+.circle{
+    width: .7rem;
+    height: .7rem;
+    border-radius: 100%;
+    border: .01rem solid #e4e4e4;
+    background: #FFFFFF;
+}
+@media(max-width:575px){
+    .col-md-3{
+        padding-right: 15px;
+    }
+}
+.circle-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: .7rem;
+    color:#29b078;
+}
+.font{
+    flex: 1;
+    margin: 0 .35rem;
+    font-size: .14rem;
+    color: #999999;
+}
+@media(min-width:992px){
+    .font-right{
+        flex: none;
+    }
+}
+@media(max-width:767px){
+    .font {
+        flex: none;
+        margin: 0;
+    }
+}
+.arrows{
+    width: .2rem;
+    height: .2rem;
+    background: url(../picture/task-css8.png) no-repeat 0 -1.94rem;
+}
+@media(max-width:767px) {
+    .arrows{
+        flex: none;
+    }
+}
+@media (min-width:768px){
+    .distance{
+        margin-top:1.24rem;
+    }
+}
+.student-box{
+    width: 3.5rem;
+    height:4.8rem;
+    padding: .2rem .32rem .4rem .32rem;
+    margin: 0 .2rem;
+    border: .01rem solid #e4e4e4;
+    background: #FFFFFF;
+    text-align: center;
+}
+.portrait{
+    width: 1.08rem;
+    height: 1.08rem;
+}
+h4{
+    margin: .36rem 0 .26rem 0;
+    font-size: .18rem;
+    color: #333333;
+}
+.show{
+    font-size: .18rem;
+    color: #999999;
+    text-align: left;
 }
