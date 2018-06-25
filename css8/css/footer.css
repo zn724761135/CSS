@@ -1,0 +1,66 @@
+/* footer页尾 */
+footer{
+    width: 100%;
+    margin-top: .18rem;
+    padding-top: .36rem;
+    background: #26A26F;
+}
+.footer-font{
+    font-size: .16rem;
+    color: #FFFFFF;
+}
+
+.right-font{
+    font-size: .16rem;
+    color: #FFFFFF;
+    text-align: right;
+}
+@media(min-width:576px){
+    .center-box{
+        margin-top:.3rem;
+    }
+}
+.it{
+    margin-left: .34rem;
+}
+@media(max-width:575px){
+    .offset-4{
+        margin-left: 0;
+    }
+}
+div.erweima-center{
+    text-align: right;
+}
+.erweima{
+    display: block;
+    width: .92rem;
+    height: .92rem;
+}
+@media(max-width:575px){
+    .erweima{
+        margin-left: .25rem;
+    }
+}
+a.erweima{
+    position: absolute;
+    top:.5rem;
+    right: .55rem;
+}
+@media(max-width:575px){
+    .erweima-center{
+        position: absolute;
+        top:-.7rem;
+        right: 0;
+        margin-right: .5rem;
+    }
+}
+.copyright-box{
+    padding:.07rem 0;
+    margin-top: .33rem;
+    border-top: .01rem solid #32C086;
+}
+.copyright{
+    font-size:.14rem;
+    text-align: center;
+    color: #FFFFFF;
+}
