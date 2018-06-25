@@ -5,6 +5,64 @@ body{
     font-size: initial;
     background: #fafafa;
 }
-p,h6,h4,ul{
+p{
     margin: 0;
+}
+  /* main主体 */
+.picture{
+    width: 100vw;
+    height: 31vh;
+    margin-bottom: .3rem;
+}
+.black-font{
+    font-size: .16rem;
+    color: #333333 !important;
+}
+.green-font{
+    font-size: .16rem;
+    color: #29B078 !important;
+}
+.left-nav{
+    display: flex;
+    justify-content: center;
+    margin-top: .29rem ;
+    border:.01rem solid #e1e1e1;
+    background: #ffffff;
+    }
+.headline{
+    display: inline-block;
+    margin: .21rem 0 .24rem 0 ;
+    border-bottom: .01rem solid #e1e1e1;
+    list-style:none;
+}
+.a{
+    width: 100%;
+    border-bottom: .01rem solid #e1e1e1;
+}
+h1.font{
+    width: 100%;
+    margin: 0;
+    font-size: .30rem;
+    color: #333333 !important;
+}
+.font{
+    margin-left: -.2rem;
+    font-size: .22rem;
+    color: #29B078 !important;
+    line-height: .8rem;
+}
+.dian{
+    color:#FF650E;
+    line-height: .8rem;
+    list-style: inside circle;
+}
+.dian:hover{
+    color:#FF650E;
+    list-style: inside disc;
+}
+.font:hover{
+    color: #FF650E !important;
+}
+.txet-box{
+
 }
