@@ -1,0 +1,10 @@
+html{
+    font-size: 312.5%;
+}
+body{
+    font-size: initial;
+    background: #fafafa;
+}
+p,h6,h4,ul{
+    margin: 0;
+}
