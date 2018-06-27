@@ -11,6 +11,9 @@ p,strong{
 ul{
     padding: 0;
 }
+a{
+    text-decoration:none !important;
+}
   /* main主体 */
 .home-box{
     padding: .31rem 0 .31rem 0;

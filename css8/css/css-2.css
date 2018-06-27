@@ -11,6 +11,9 @@ p{
 ul{
     padding: 0;
 }
+a{
+    text-decoration:none !important;
+}
   /* main主体 */
 .picture{
     width: 100vw;
