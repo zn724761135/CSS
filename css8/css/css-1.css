@@ -16,7 +16,6 @@ a{
 /* 轮播图 */
 .picture-size{
     width: 100vw;
-    height: 31vh;
 }
 .carousel-indicators li {
     width: 10px;
@@ -57,8 +56,18 @@ h6{
     font-size: .16rem;
     color: #999999;
 }
+@media(min-width:576px) and (max-width:767px){
+    .synopsis{
+        text-align: left;
+    }
+}
 @media(min-width:576px){
     .left{
+        text-align: left;
+    }
+}
+@media(max-width:420px){
+    .synopsis-left{
         text-align: left;
     }
 }
@@ -106,13 +115,14 @@ strong{
 }
 .box{
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding-right: 0;
 }
 .circle{
     width: .7rem;
     height: .7rem;
+    margin-bottom: .2rem;
     border-radius: 100%;
     border: .01rem solid #e4e4e4;
     background: #FFFFFF;
@@ -126,6 +136,7 @@ strong{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: .2rem;
     line-height: .7rem;
     color:#29b078;
 }
@@ -135,27 +146,28 @@ strong{
     font-size: .14rem;
     color: #999999;
 }
+@media(max-width:575px){
+    .font{
+        margin-left: 10vw;
+    }
+}
 @media(min-width:992px){
     .font-right{
         flex: none;
     }
 }
-@media(max-width:767px){
-    .font {
-        flex: none;
-        margin: 0;
-    }
-}
+
 .arrows{
     width: .2rem;
     height: .2rem;
     background: url(../picture/task-css8.png) no-repeat 0 -1.94rem;
 }
-@media(max-width:767px) {
+@media(max-width:575px){
     .arrows{
-        flex: none;
+        display: none;
     }
 }
+
 @media (min-width:768px){
     .distance{
         margin-top:1.24rem;

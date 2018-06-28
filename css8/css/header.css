@@ -54,9 +54,10 @@ a{
 }
 .navbar-toggler{
     padding: .15rem;
+    margin: .2rem .45rem .2rem 0 ;
     border:none;
     outline: none !important;
-    font-size: .5rem;
+    font-size: .4rem;
 }
 .navbar-toggler:hover {
     background: darkgreen;
@@ -94,4 +95,12 @@ a{
     /* 字符间距 */
     letter-spacing: .1rem;
     color:#FFFFFF;
+}
+@media(max-width:767px){
+    .nav-link{
+        border: none;
+    }
+}
+.right-zoom{
+    margin-right: -.8rem;
 }

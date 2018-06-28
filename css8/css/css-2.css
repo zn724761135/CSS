@@ -17,7 +17,6 @@ a{
   /* main主体 */
 .picture{
     width: 100vw;
-    height: 31vh;
     margin-bottom: .3rem;
 }
 .black-font{
@@ -74,7 +73,7 @@ h1.font{
     color:#FF650E;
     list-style: inside disc;
 }
-.font:hover{
+.dian:hover .font{
     color: #FF650E !important;
 }
 .txet-box{
