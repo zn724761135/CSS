@@ -54,7 +54,7 @@ a{
 }
 .navbar-toggler{
     padding: .15rem;
-    margin: .2rem .45rem .2rem 0 ;
+    margin: .2rem 0;
     border:none;
     outline: none !important;
     font-size: .4rem;
@@ -103,4 +103,9 @@ a{
 }
 .right-zoom{
     margin-right: -.8rem;
+}
+@media(max-width:767px){
+    .right-zoom{
+        margin-right: 0;
+    } 
 }
