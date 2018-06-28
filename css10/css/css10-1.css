@@ -114,7 +114,8 @@ a{
 }
 @media(max-width:768px){
     .nav-link{
-        margin:10px 0;
+        margin:0;
+        line-height: 35px;
     }
 }
 
@@ -162,4 +163,30 @@ span.font{
 }
 .box{
     display: inline;
+}
+.schedule{
+    display: flex;
+    justify-content: center;
+}
+@media(max-width:510px){
+    .col-8{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+   /* main主体 */
+.strong-font{
+    display: inline-block;
+    font-size: 16px;
+    color: #333333;
+    margin: 50px 0 16px 0;
+}
+.strong-font::after{
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 20px;
+    background: #1D7AD9;
 }

@@ -104,7 +104,25 @@ th.width3{
 }
 .picture{
     margin:.2rem .08rem .16rem .11rem;
-
+}
+@media(max-width:375px){
+    .picture{
+        width: 1.85rem;
+        height: 1.85rem;
+        margin:.2rem .08rem .16rem .3rem;
+    }
+}
+@media(min-width:376px) and (max-width:470px) {
+    .picture{
+        width: 2.1rem;
+        height: 2.1rem;
+        margin:.2rem .08rem .16rem .5rem;
+    }
+}
+@media(min-width:490px) and (max-width:767px) {
+    .picture{
+        margin:.2rem .08rem .16rem .6rem;
+    }
 }
 strong.font{
     font-size: .16rem;
