@@ -201,6 +201,7 @@ h4{
 .show{
     text-align: left;
     font-size: .18rem;
+    line-height: .5rem;
     color: #999999;
 }
 @media(max-width:767px){
